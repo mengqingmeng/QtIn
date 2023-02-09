@@ -70,6 +70,7 @@ void MyThread::pause()
 {
     if (QThread::isRunning())
     {
+        qDebug() << QThread::currentThreadId() << " paused.";
         pauseFlag = true;
     }
 }
@@ -82,6 +83,7 @@ void MyThread::resume()
 {
     if (QThread::isRunning())
     {
+        qDebug() << QThread::currentThreadId() << " resume.";
         pauseFlag = false;
         condition.wakeAll();
     }
@@ -98,7 +100,7 @@ void MyThread::run()
 
     while (!stopFlag)
     {
-
+        // 调用process执行任务，子类会重写此方法。
         process();
         if (pauseFlag)
         {

@@ -19,13 +19,16 @@ public:
     State state() const;
 
 public slots:
-    void start(Priority pri = InheritPriority);
+    void start(QThread::Priority pri = InheritPriority);
     void stop();
     void pause();
     void resume();
 
 protected:
     virtual void run() override;
+    /**
+     * @brief process 纯虚函数，子类必须重写。此方法为执行的任务
+     */
     virtual void process() = 0;
 
 private:

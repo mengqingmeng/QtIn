@@ -76,7 +76,7 @@ void Executor::setIntervalDelay(int ms)
  */
 void Executor::start(QThread::Priority pri)
 {
-    if (startupDelay != 0)
+    if (startupDelay != 0) // 延迟执行任务
     {
         QTimer::singleShot(startupDelay, this, [=]
         {
@@ -101,7 +101,7 @@ void Executor::process()
         able->exec();
     }
 
-    if (intervalDelay != 0)
+    if (intervalDelay != 0) // 间隔执行
     {
         QTimer::singleShot(intervalDelay, this, [=]
         {

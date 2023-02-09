@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     runableList.append(new Task1());
     runableList.append(new Task2());
+
     executor->addRunables(runableList);
 }
 
