@@ -4,6 +4,7 @@ SUBDIRS += \
     DrawSimple2D \
     MysqlDemo \
     QDiceThreadDemo \
+    QDiceThreadQMutexDemo \
     QThreadDemo \
     StackedWidgetDemo \
     ch101 \

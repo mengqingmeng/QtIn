@@ -25,7 +25,13 @@ private slots:
     void onThreadFinished();
     void onThreadNewValue(int seq,int diceValue);
 
+    /**
+     * @brief on_btnStartThread_clicked 启动线程按钮
+     */
     void on_btnStartThread_clicked();
+    /**
+     * @brief on_btnStopThread_clicked 停止线程按钮
+     */
     void on_btnStopThread_clicked();
 
     void on_btnDiceBegin_clicked();

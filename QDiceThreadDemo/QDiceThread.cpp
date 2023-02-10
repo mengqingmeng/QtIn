@@ -19,12 +19,14 @@ void QDiceThread::stopThread(){
 }
 
 void QDiceThread::run(){
+
+    // 初始化标识
     m_stop = false;
     m_seq = 0;
 
    // 设置随机种子
     srand(QTime::currentTime().msec());
-    while(!m_stop){
+    while(!m_stop){ // 未停止
         if(!m_paused){ // 未暂停
             m_diceValue = (rand() % 6) + 1;
             m_seq++;

@@ -7,11 +7,14 @@ Dialog::Dialog(QWidget *parent)
 {
     ui->setupUi(this);
 
+    // started、finised为QThread的信号
     connect(&thread,&QDiceThread::started,this,&Dialog::onThreadStarted);
     connect(&thread,&QDiceThread::finished,this,&Dialog::onThreadFinished);
+    // 自定义信号
     connect(&thread,&QDiceThread::newValue,this,&Dialog::onThreadNewValue);
 }
 
+// 插槽
 void Dialog::onThreadStarted(){
     ui->LabA->setText("启动");
 }
@@ -33,11 +36,13 @@ void Dialog::onThreadNewValue(int seq,int diceValue){ // 线程值
     ui->LabPic->setPixmap(pic);
 }
 
+//
 void Dialog::closeEvent(QCloseEvent *event)
 {
     if(thread.isRunning()){
         thread.stopThread();
-        thread.wait();
+        thread.quit();
+        thread.wait(); // 交出线程的执行权
     }
 
     accept();
@@ -45,7 +50,7 @@ void Dialog::closeEvent(QCloseEvent *event)
 
 void Dialog::on_btnStartThread_clicked()
 {
-    thread.start();
+    thread.start(); // 开始线程
     ui->btnStartThread->setEnabled(false);
     ui->btnStopThread->setEnabled(true);
 
@@ -77,6 +82,8 @@ void Dialog::on_btnClear_clicked()
 void Dialog::on_btnStopThread_clicked() // 结束线程
 {
     thread.stopThread();
+    thread.quit();
+    thread.wait();
 
     ui->btnDiceBegin->setEnabled(false);
     ui->btnDiceEnd->setEnabled(false);
