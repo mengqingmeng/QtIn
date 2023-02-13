@@ -5,6 +5,8 @@ SUBDIRS += \
     MysqlDemo \
     QDiceThreadDemo \
     QDiceThreadQMutexDemo \
+    QNetDemo \
+    QSemaphoreDemo \
     QThreadDemo \
     StackedWidgetDemo \
     ch101 \
