@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QPainter>
 #include <QColor>
+#include <QPainterPath>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
