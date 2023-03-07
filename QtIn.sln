@@ -36,6 +36,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "painterDemo", "painterDemo\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ViewportAndWindowDemo", "ViewportAndWindowDemo\ViewportAndWindowDemo.vcxproj", "{32705801-B444-4F54-9D78-480B542B735B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QGraphicsViewDemo", "QGraphicsViewDemo\QGraphicsViewDemo.vcxproj", "{44A61783-3220-4D80-9ADF-B6C136CCBE4A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Butterfly", "Butterfly\Butterfly.vcxproj", "{EECDBA11-D158-4115-939D-483C3F0F0D4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -110,12 +114,20 @@ Global
 		{32705801-B444-4F54-9D78-480B542B735B}.Debug|x64.Build.0 = Debug|x64
 		{32705801-B444-4F54-9D78-480B542B735B}.Release|x64.ActiveCfg = Release|x64
 		{32705801-B444-4F54-9D78-480B542B735B}.Release|x64.Build.0 = Release|x64
+		{44A61783-3220-4D80-9ADF-B6C136CCBE4A}.Debug|x64.ActiveCfg = Debug|x64
+		{44A61783-3220-4D80-9ADF-B6C136CCBE4A}.Debug|x64.Build.0 = Debug|x64
+		{44A61783-3220-4D80-9ADF-B6C136CCBE4A}.Release|x64.ActiveCfg = Release|x64
+		{44A61783-3220-4D80-9ADF-B6C136CCBE4A}.Release|x64.Build.0 = Release|x64
+		{EECDBA11-D158-4115-939D-483C3F0F0D4C}.Debug|x64.ActiveCfg = Debug|x64
+		{EECDBA11-D158-4115-939D-483C3F0F0D4C}.Debug|x64.Build.0 = Debug|x64
+		{EECDBA11-D158-4115-939D-483C3F0F0D4C}.Release|x64.ActiveCfg = Release|x64
+		{EECDBA11-D158-4115-939D-483C3F0F0D4C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7FEF98B5-2535-4824-8E99-39E5BD6AF2E5}
 		Qt5Version = 6.4.2_msvc2019_64
+		SolutionGuid = {7FEF98B5-2535-4824-8E99-39E5BD6AF2E5}
 	EndGlobalSection
 EndGlobal
