@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-055b3dbdbb8bd942ee49.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DirModeEx",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DirModeEx::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DirModeEx-Debug-4fd45e5d4b24ea19837e.json",
+					"name" : "DirModeEx",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DirModeEx_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DirModeEx_autogen-Debug-fa4999e380e6f9f6d8d1.json",
+					"name" : "DirModeEx_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/mqm/WORKSPACE/CODE/cpp/QtIn/build-DirModeEx-Qt_6_2_4_for_macOS-Debug",
+		"source" : "/Users/mqm/WORKSPACE/CODE/cpp/QtIn/DirModeEx"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

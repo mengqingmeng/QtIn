@@ -1,6 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
+    DirModeEx \
     DrawSimple2D \
     MysqlDemo \
     QDiceThreadDemo \
@@ -8,6 +9,7 @@ SUBDIRS += \
     QNetDemo \
     QSemaphoreDemo \
     QThreadDemo \
+    QWaitConditionDemo \
     StackedWidgetDemo \
     ch101 \
     ch1201 \

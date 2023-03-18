@@ -18,6 +18,11 @@ void QDiceThread::stopThread(){
     m_stop = true;
 }
 
+int QDiceThread::diceValue()
+{
+    return m_diceValue;
+}
+
 void QDiceThread::run(){
 
     // 初始化标识
@@ -28,8 +33,8 @@ void QDiceThread::run(){
     srand(QTime::currentTime().msec());
     while(!m_stop){ // 未停止
         if(!m_paused){ // 未暂停
-            m_diceValue = (rand() % 6) + 1;
-            m_seq++;
+            m_diceValue = (rand() % 6) + 1; // 1-6 随机数
+            m_seq++; // 次数
             emit newValue(m_seq,m_diceValue);
         }
         msleep(500);
