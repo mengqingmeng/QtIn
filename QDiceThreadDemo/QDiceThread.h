@@ -50,6 +50,12 @@ public:
      */
     void stopThread();
 
+    /**
+    * @brief diceValue 获取掷子的点数
+    * @return 点数值
+    */
+   int diceValue();
+
 signals:
     /**
      * @brief newValue 当投骰子后，触发此信号
